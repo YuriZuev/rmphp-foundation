@@ -8,6 +8,12 @@ class MatchObject {
 	public string $methodName;
 	public array $params;
 
+	/**
+	 * MatchObject constructor.
+	 * @param string $className
+	 * @param string $methodName
+	 * @param null $params
+	 */
 	public function __construct($className = "", $methodName="", $params=null) {
 		$this->className = $className;
 		$this->methodName = $methodName;
