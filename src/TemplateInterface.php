@@ -6,10 +6,11 @@ interface TemplateInterface {
 
 	public function setTemplate(string $template): TemplateInterface;
 	public function setSubtemplePath(string $subtemplatePath) : TemplateInterface;
+	public function getSubtemplePath(): string;
 	public function setValue(string $point, string $string) : void;
 	public function addValue(string $point, string $string) : void;
-	public function setSubtempl(string $point, string $subTempl, array $resource = []) : void;
-	public function addSubtpl(string $point, string $subTempl, array $resource = []) : void;
+	public function setSubtemple(string $point, string $subTempl, array $resource = []) : void;
+	public function addSubtemple(string $point, string $subTempl, array $resource = []) : void;
 	public function setGlobals(array $globals = []) : void;
 	public function inc(string $incFile) : string;
 	public function getPoint(string $point) : string;

@@ -8,7 +8,6 @@ class MatchObject {
 	public string $methodName;
 	public array $params;
 
-
 	/**
 	 * MatchObject constructor.
 	 * @param string $className
