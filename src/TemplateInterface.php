@@ -15,4 +15,5 @@ interface TemplateInterface {
 	public function inc(string $incFile) : string;
 	public function getPoint(string $point) : string;
 	public function getResponse(): string;
+	
 }
