@@ -9,12 +9,11 @@ class MatchObject {
 	public array $params;
 
 	/**
-	 * MatchObject constructor.
 	 * @param string $className
 	 * @param string $methodName
-	 * @param null $params
+	 * @param array $params
 	 */
-	public function __construct($className = "", $methodName="", $params=null) {
+	public function __construct(string $className = "", string $methodName="", array $params=[]) {
 		$this->className = $className;
 		$this->methodName = $methodName;
 		$this->params = (is_array($params)) ? $params : [];
