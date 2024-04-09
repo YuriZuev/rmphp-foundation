@@ -3,14 +3,69 @@
 namespace Rmphp\Foundation;
 
 interface TemplateInterface {
+
+	/**
+	 * @param string $template
+	 * @param array $resource
+	 * @return TemplateInterface
+	 */
 	public function setTemplate(string $template, array $resource = []): TemplateInterface;
-	public function setSubtemplePath(string $subtemplatePath) : TemplateInterface;
-	public function getSubtemplePath(): string;
+
+	/**
+	 * @param string $subtemplatePath
+	 * @return TemplateInterface
+	 */
+	public function setSubtemplatePath(string $subtemplatePath) : TemplateInterface;
+
+	/**
+	 * @return string
+	 */
+	public function getSubtemplatePath(): string;
+
+	/**
+	 * @param string $point
+	 * @param string $string
+	 * @return void
+	 */
 	public function setValue(string $point, string $string) : void;
+
+	/**
+	 * @param string $point
+	 * @param string $string
+	 * @return void
+	 */
 	public function addValue(string $point, string $string) : void;
-	public function setSubtemple(string $point, string $subTempl, array $resource = []) : void;
-	public function addSubtemple(string $point, string $subTempl, array $resource = []) : void;
+
+	/**
+	 * @param string $point
+	 * @param string $subtemplate
+	 * @param array $resource
+	 * @return void
+	 */
+	public function setSubtemplate(string $point, string $subtemplate, array $resource = []) : void;
+
+	/**
+	 * @param string $point
+	 * @param string $subtemplate
+	 * @param array $resource
+	 * @return void
+	 */
+	public function addSubtemplate(string $point, string $subtemplate, array $resource = []) : void;
+
+	/**
+	 * @param string $incFile
+	 * @return string
+	 */
 	public function inc(string $incFile) : string;
+
+	/**
+	 * @param string $point
+	 * @return string
+	 */
 	public function getPoint(string $point) : string;
+
+	/**
+	 * @return string
+	 */
 	public function getResponse(): string;
 }
