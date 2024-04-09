@@ -15,7 +15,7 @@ interface TemplateInterface {
 	 * @param string $subtemplatePath
 	 * @return TemplateInterface
 	 */
-	public function setSubtemplatePath(string $subtemplatePath) : TemplateInterface;
+	public function setSubtemplatePath(string $subtemplatePath = "") : TemplateInterface;
 
 	/**
 	 * @return string
