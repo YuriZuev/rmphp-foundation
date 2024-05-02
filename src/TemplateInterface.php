@@ -23,6 +23,23 @@ interface TemplateInterface {
 	public function getSubtemplatePath(): string;
 
 	/**
+	 * @param array $aliases
+	 * @return TemplateInterface
+	 */
+	public function setSubtemplatePathAlias(array $aliases = []) : TemplateInterface;
+
+	/**
+	 * @return array
+	 */
+	public function getSubtemplatePathAlias() : array;
+
+	/**
+	 * @param string $subtemplate
+	 * @return string
+	 */
+	public function getFullSubtemplatePath(string $subtemplate) : string;
+
+	/**
 	 * @param string $point
 	 * @param string $string
 	 * @return void
