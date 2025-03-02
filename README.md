@@ -10,13 +10,13 @@ Stable version
 composer require rmphp/foundation
 ```
 ```bash
-composer require rmphp/foundation:"^2.0"
+composer require rmphp/foundation:"^3.0"
 ```
 
 
 Dev version contains the latest changes
 
 ```bash
-composer require rmphp/foundation:"2.x-dev"
+composer require rmphp/foundation:"3.x-dev"
 ```
 
